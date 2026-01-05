@@ -1,4 +1,4 @@
-# Pre-Crash-Intelligence-System
+# Pre-Crash Intelligence System for Two-Wheelers
 
 A machine learning-based early warning system that predicts unsafe riding conditions and imminent crash scenarios **1–3 seconds before collision** using inertial measurement unit (IMU) sensor data from two-wheeled vehicles. This system leverages time-series signal processing and ensemble machine learning algorithms to enable real-time risk assessment and intervention in resource-constrained environments.
 
