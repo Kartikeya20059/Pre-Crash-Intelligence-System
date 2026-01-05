@@ -34,11 +34,13 @@ Key innovations include: (1) a unified preprocessing pipeline supporting heterog
 
 ### System Overview & Architecture Visualization
 
-![System Overview](output/visualizations/system_overview.png)
+<img width="2080" height="1180" alt="image" src="https://github.com/user-attachments/assets/c510df8d-aad6-4a87-949a-fbec891d1676" />
+
 
 *Figure 10: Visual representation of the complete system architecture from sensor input through early warning output.*
 
-![Sensor Correlation](output/visualizations/sensor_correlation_matrix.png)
+<img width="1312" height="1184" alt="image" src="https://github.com/user-attachments/assets/3caa3414-9d25-4f20-8df3-b4f07140b52c" />
+
 
 *Figure 11: Heatmap of correlations between IMU sensor channels (accelerometer and gyroscope) showing orthogonal and interdependent relationships.*
 
@@ -163,17 +165,20 @@ Key innovations include: (1) a unified preprocessing pipeline supporting heterog
 
 ### Dataset & Distribution Overview
 
-![Dataset Summary](output/visualizations/dataset_summary.png)
+<img width="1925" height="881" alt="image" src="https://github.com/user-attachments/assets/76628e69-8cf4-43d8-b55a-3d4f8d063e5b" />
+
 
 *Figure 5: Multi-dataset integration summary showing sample distribution across three source datasets totaling 2.1M+ samples with 21 labeled crash and maneuver scenarios.*
 
-![Class Distribution](output/visualizations/class_distribution.png)
+<img width="1641" height="731" alt="image" src="https://github.com/user-attachments/assets/8cac54ea-88c1-49fa-98f2-1e73f7afcc7d" />
+
 
 *Figure 6: Class distribution showing 45% crash events and 55% safe maneuvers with SMOTE balancing applied for training.*
 
 ### Crash Indicators Analysis
 
-![Pre-Crash Indicators](output/visualizations/pre_crash_indicators_analysis.png)
+<img width="2083" height="1475" alt="image" src="https://github.com/user-attachments/assets/84b18731-baee-4b2e-9145-a846a47753d0" />
+
 
 *Figure 7: Statistical analysis of pre-crash indicators (braking intensity, lateral instability, roll anomaly, jerk metrics) showing distinct signatures between crash and safe events.*
 
@@ -334,7 +339,8 @@ Summary across all 111 features:
 
 Top 10 most predictive features from the production model:
 
-![Feature Importance](output/visualizations/feature_importance_top15.png)
+<img width="1777" height="1180" alt="image" src="https://github.com/user-attachments/assets/29c1b228-babb-4f02-864a-93595d73f45d" />
+
 
 *Figure 4: Top 15 most important features from the Random Forest model. Braking-related features dominate (ax_peak_prominence_max: 3.73%), confirming longitudinal acceleration as the strongest crash predictor.*
 
@@ -437,7 +443,8 @@ with α = 0.7, creating a responsive yet stable risk estimate.
 
 ### Model Comparison Visualization
 
-![Model Comparison](output/visualizations/model_comparison.png)
+<img width="1780" height="880" alt="image" src="https://github.com/user-attachments/assets/4faf45a6-a019-4db8-ba43-5a26bd12b135" />
+
 
 *Figure 1: Comparative performance across seven machine learning algorithms. Random Forest achieves the highest accuracy (91.77%) and crash detection recall (93.51%).*
 
@@ -465,7 +472,8 @@ Actual Safe           542                 59           (n=601 safe events)
 Actual Crash           39                562           (n=601 crash events)
 ```
 
-![Confusion Matrix](output/visualizations/confusion_matrix.png)
+<img width="1172" height="1032" alt="image" src="https://github.com/user-attachments/assets/ebb50503-a899-4568-9075-4030b3300e83" />
+
 
 *Figure 2: Confusion matrix visualization showing 93.51% crash detection rate with 9.8% false positive rate on safe events.*
 
@@ -486,7 +494,7 @@ Actual Crash           39                562           (n=601 crash events)
 | SVM (RBF) | 76.13% | 96.76% | 73.58% | 83.59% | 89.22% | 25 ms |
 | Logistic Regression | 68.25% | 95.54% | 64.61% | 77.09% | 83.03% | 1 ms |
 
-![ROC Curve](output/visualizations/roc_curve.png)
+<img width="1330" height="1182" alt="image" src="https://github.com/user-attachments/assets/2a66e77c-a88f-4738-bf19-37bacf332df9" />
 
 *Figure 8: ROC curves comparing all seven machine learning models. Random Forest (AUC: 96.41%) shows superior discrimination ability between crash and safe events.*
 
@@ -519,7 +527,8 @@ The cardinal requirement for a crash prediction system is temporal lead time—s
 
 ### Temporal Detection Window Analysis
 
-![Early Warning Capability](output/visualizations/early_warning_capability.png)
+<img width="2080" height="881" alt="image" src="https://github.com/user-attachments/assets/7ff18c1a-1ebc-45c8-9450-0b23fdede400" />
+
 
 *Figure 3: Temporal analysis of early warning lead times across all detected crashes. Median warning time: 2.1 seconds (IQR: 1.5–3.0 seconds).*
 
@@ -555,7 +564,8 @@ For each detected crash, the model's probability estimate is traced backward in 
 
 Early warning performance is consistent across the three source datasets:
 
-![Scenario Distribution Comparison](output/visualizations/scenario_distribution_comparison.png)
+<img width="2233" height="1473" alt="image" src="https://github.com/user-attachments/assets/fea5479a-09d6-4085-bd82-73d39ddbf1bc" />
+
 
 *Figure 9: Cross-dataset validation showing consistent early warning performance (93.0%–94.1% detection rates) across three independent sensor datasets, validating generalization.*
 
@@ -682,3 +692,4 @@ This project was developed as an academic research submission, synthesizing expe
 - **Open Science**: Multi-source datasets (citation details in acknowledgments) and modular software design facilitate reuse and extension
 
 The system advances the state-of-the-art in motorcycle safety through rigorous empirical evaluation, novel feature engineering, and practical focus on deployment constraints. While prototype-stage, the demonstrated early warning capability and computational efficiency establish a solid foundation for clinical validation and real-world impact.
+
