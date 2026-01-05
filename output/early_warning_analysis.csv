@@ -1,0 +1,6 @@
+scenario,duration_sec,max_probability,avg_probability,warning_detected,warning_time_before_end_sec,windows_analyzed,high_risk_windows
+Fall in a curve_V1,784.61,1.0,0.8979332711881279,True,783.61,1568,1447
+Fall in the roundabout_V1,663.65,1.0,0.8710829040673143,True,662.65,1326,1158
+Fall with leaning of the motorcycle_V1,816.63,1.0,0.8758614080532332,True,815.63,1632,1477
+Fall on a slippery straight road section_V1,740.45,1.0,0.8865667223857798,True,739.45,1479,1333
+Fall in a curve,784.61,1.0,0.8525036913726612,True,783.61,1568,1289

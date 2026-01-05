@@ -1,0 +1,178 @@
+{
+  "dataset_summary": {
+    "total_samples": 2148308,
+    "total_windows": 42934,
+    "n_features": 111,
+    "scenarios": [
+      {
+        "scenario": "Fall in a curve_V1",
+        "classification": "crash",
+        "samples": 78461,
+        "duration_sec": 78.46,
+        "source": "Fall in a curve"
+      },
+      {
+        "scenario": "Fall in the roundabout_V1",
+        "classification": "crash",
+        "samples": 66365,
+        "duration_sec": 66.36399999999999,
+        "source": "Fall in the roundabout"
+      },
+      {
+        "scenario": "Fall with leaning of the motorcycle_V1",
+        "classification": "crash",
+        "samples": 81663,
+        "duration_sec": 81.66199999999999,
+        "source": "Fall with leaning of the motorcycle"
+      },
+      {
+        "scenario": "Fall on a slippery straight road section_V1",
+        "classification": "crash",
+        "samples": 74045,
+        "duration_sec": 74.044,
+        "source": "Fall on a slippery straight road section"
+      },
+      {
+        "scenario": "Acceleration On Curve_V1",
+        "classification": "normal",
+        "samples": 47935,
+        "duration_sec": 47.934000000000005,
+        "source": "Acceleration On Curve"
+      },
+      {
+        "scenario": "Acceleration On Straight Line_V1",
+        "classification": "normal",
+        "samples": 138303,
+        "duration_sec": 138.302,
+        "source": "Acceleration On Straight Line"
+      },
+      {
+        "scenario": "Harsh breaking On Straight Line_V1",
+        "classification": "high_risk",
+        "samples": 111485,
+        "duration_sec": 111.484,
+        "source": "Harsh breaking On Straight Line"
+      },
+      {
+        "scenario": "Fall Like manoeuvre 3_V1",
+        "classification": "high_risk",
+        "samples": 128446,
+        "duration_sec": 128.445,
+        "source": "Fall Like manoeuvre 3"
+      },
+      {
+        "scenario": "Fall Like manoeuvre 2_V1",
+        "classification": "high_risk",
+        "samples": 148926,
+        "duration_sec": 148.92499999999998,
+        "source": "Fall Like manoeuvre 2"
+      },
+      {
+        "scenario": "Fall Like manoeuvre 1_V1",
+        "classification": "high_risk",
+        "samples": 132478,
+        "duration_sec": 132.477,
+        "source": "Fall Like manoeuvre 1"
+      },
+      {
+        "scenario": "Fall in a curve",
+        "classification": "crash",
+        "samples": 78461,
+        "duration_sec": 78.46,
+        "source": "Fall in a curve"
+      },
+      {
+        "scenario": "Fall in the roundabout",
+        "classification": "crash",
+        "samples": 66365,
+        "duration_sec": 66.36399999999999,
+        "source": "Fall in the roundabout"
+      },
+      {
+        "scenario": "Fall with leaning of the motorcycle",
+        "classification": "crash",
+        "samples": 81663,
+        "duration_sec": 81.66199999999999,
+        "source": "Fall with leaning of the motorcycle"
+      },
+      {
+        "scenario": "Fall on a slippery straight road section",
+        "classification": "crash",
+        "samples": 74045,
+        "duration_sec": 74.044,
+        "source": "Fall on a slippery straight road section"
+      },
+      {
+        "scenario": "Fall Like manoeuvre 3",
+        "classification": "high_risk",
+        "samples": 128446,
+        "duration_sec": 128.445,
+        "source": "Fall Like manoeuvre 3"
+      },
+      {
+        "scenario": "Acceleration On Curve",
+        "classification": "normal",
+        "samples": 47935,
+        "duration_sec": 47.934000000000005,
+        "source": "Acceleration On Curve"
+      },
+      {
+        "scenario": "Fall Like manoeuvre 2",
+        "classification": "high_risk",
+        "samples": 148926,
+        "duration_sec": 148.92499999999998,
+        "source": "Fall Like manoeuvre 2"
+      },
+      {
+        "scenario": "Much degraded track",
+        "classification": "high_risk",
+        "samples": 132094,
+        "duration_sec": 132.093,
+        "source": "Much degraded track"
+      },
+      {
+        "scenario": "Acceleration On Straight Line",
+        "classification": "normal",
+        "samples": 138303,
+        "duration_sec": 138.302,
+        "source": "Acceleration On Straight Line"
+      },
+      {
+        "scenario": "Harsh breaking On Straight Line",
+        "classification": "high_risk",
+        "samples": 111485,
+        "duration_sec": 111.484,
+        "source": "Harsh breaking On Straight Line"
+      },
+      {
+        "scenario": "Fall Like manoeuvre 1",
+        "classification": "high_risk",
+        "samples": 132478,
+        "duration_sec": 132.477,
+        "source": "Fall Like manoeuvre 1"
+      }
+    ]
+  },
+  "model_results": {
+    "RandomForest": {
+      "accuracy": 0.9137067660416909,
+      "precision": 0.9623272727272727,
+      "recall": 0.9320935474781629,
+      "f1": 0.94696915479854,
+      "auc": 0.9623886901615888
+    },
+    "GradientBoosting": {
+      "accuracy": 0.8923954815418657,
+      "precision": 0.9352791878172588,
+      "recall": 0.9344885883347421,
+      "f1": 0.9348837209302325,
+      "auc": 0.9370391795870952
+    }
+  },
+  "best_model": "GradientBoosting",
+  "early_warning_capability": {
+    "target_seconds": "1-3",
+    "window_size_sec": 1.0,
+    "achievable": true
+  }
+}

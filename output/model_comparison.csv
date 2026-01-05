@@ -1,0 +1,8 @@
+,accuracy,precision,recall,f1,auc
+Random Forest,0.9177,0.9643,0.9351,0.9494,0.9641
+Gradient Boosting,0.8924,0.9353,0.9345,0.9349,0.937
+Neural Network,0.8981,0.9542,0.921,0.9373,0.9464
+Decision Tree,0.8596,0.9507,0.8755,0.9115,0.868
+K-Nearest Neighbors,0.7816,0.9725,0.7573,0.8515,0.8906
+SVM (RBF),0.7613,0.9676,0.7358,0.8359,0.8922
+Logistic Regression,0.6825,0.9554,0.6461,0.7709,0.8303
